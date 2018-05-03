@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+<body>
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		
+		<symbol id="arrow" viewBox="0 0 129 129">
+			<g>
+		    	<path d="m121.4,61.6l-54-54c-0.7-0.7-1.8-1.2-2.9-1.2s-2.2,0.5-2.9,1.2l-54,54c-1.6,1.6-1.6,4.2 0,5.8 0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2l47-47v98.1c0,2.3 1.8,4.1 4.1,4.1s4.1-1.8 4.1-4.1v-98.1l47,47c1.6,1.6 4.2,1.6 5.8,0s1.5-4.2 1.42109e-14-5.8z"/>
+			</g>
+		</symbol>
+
+		<symbol id="letsrock" viewBox="-33 353.4 63.6 13.9">
+			<g>
+				<path d="M-20,364.4c0.7-2.2,1.3-3.6,2.1-5.7c0.3-0.7,0.5-1.1,0.4-1.5c-0.1-0.7-0.6-0.9-1-0.3c-0.1,0.1-0.1,0.2-0.2,0.3
+					c-0.3,0.4-0.5,0.9-0.8,1.4c-0.9,1.6-1.6,3.7-2.1,4.4c-0.6,1-1.5,0.8-1.8-0.2c-0.7,0.5-1.5,0-1.5-0.9c0-0.8,0.2-1.8,0.3-2.6
+					c0.1-1,0.4-3.6,0.4-5c0-0.2,0-0.3-0.1-0.4c-0.2-0.5-0.6-0.5-1.1-0.2c-0.2,0.2-0.4,0.5-0.5,0.9c-0.2,0.6-0.2,1.3-0.3,2
+					c-0.1,0.5-0.8,4.6-1,4.9c-0.5,1.1-2.5-0.8-3.9-1.2c-1.6-0.4-2.6,0.4-1.4,1.1c0.8,0.5,3.4,2.5,4,3.2c0.2,0.2,0.2,0.2,0.4,0.3
+					c0.2,0.2,0.4,0.4,0.6,0.7c1.4,1.3,4,2,5.9,1c0.4-0.2,0.5-0.3,0.8-0.6C-20.3,365.4-20.2,365-20,364.4L-20,364.4z"/>
+				<path id="R_1_" d="M7.4,361.3l0.6-3.1c0.9,0,2.4-0.3,1.8,1.8C9.3,361.4,8.4,361.3,7.4,361.3L7.4,361.3z M4.1,366.9h2.1l0.9-4
+					c1.2-0.1,1.2,0.7,1.4,1.5l0.5,2.5H11l-0.5-2.6c-0.1-0.6-0.4-1.1-0.6-1.4c-0.1-0.1-0.3-0.2-0.4-0.3c0.3-0.2,0.6-0.3,0.9-0.5
+					c0.4-0.3,0.8-0.6,1.2-1.3c0.5-0.9,0.7-2.2,0.3-3.2c-0.5-1-1.3-1.2-2.8-1.2c-1.3,0-2.6,0-4,0l-0.3,1.6h1.1L4.1,366.9z"/>
+				<path id="к_1_" d="M23.8,366.9h1.9l0.7-2.9c0.8-0.1,0.9,0.4,1,1.2l0.3,1.7l1.9,0l-0.3-1.3c-0.3-1.2-0.2-1.5-0.9-2.2l2.2-3.2l-2,0
+					c-0.5,0.7-0.9,1.5-1.4,2.2h-0.6c0-0.6,1-4.7,1.2-5.9h-3.1l-0.3,1.6h1.1C25.4,359.6,23.8,366.2,23.8,366.9L23.8,366.9z"/>
+				<polyline points="-11.4,364.2 -13.2,364.2 -13.4,365.3 -14.8,365.3 -13,356.5 -16.3,356.6 -16.7,358.2 -15.5,358.2 -17.3,366.9 
+					-12,366.9 	"/>
+				<path id="о_1_" d="M13.5,364.9c-0.1-0.4-0.1-0.9,0.1-1.5c0.2-0.7,0.7-1.8,1.5-1.5c0.7,0.2,0.7,2.1,0,3.1
+					C14.6,365.8,13.8,365.9,13.5,364.9L13.5,364.9z M12.9,367.1c0.2,0.1,0.4,0.1,0.6,0.1c1.7,0.2,2.6-0.5,3.1-1.2
+					c0.5-0.6,0.6-1.1,0.8-1.9c0.3-1,0.4-2.2-0.2-3.1c-0.7-0.9-2.1-1.2-3.4-0.7c-1,0.4-1.8,1.3-2.2,2.5c-0.2,0.6-0.3,1.3-0.3,2
+					C11.5,366,12,366.7,12.9,367.1L12.9,367.1z"/>
+				<path d="M-8.8,363.5c0.1-0.7,0.5-1.5,1.1-1.7c0.5-0.1,0.7,0.3,0.6,0.7c0,0.2-0.1,0.4-0.3,0.6C-7.7,363.5-8.2,363.5-8.8,363.5
+					L-8.8,363.5z M-10.4,366.6c1.1,1.3,3.3,0.4,4.3,0.1l-0.3-1.4c-0.9,0.3-2.1,0.9-2.5-0.4c1.4,0.1,2.7-0.3,3.4-1.6
+					c1.8-3.1-2.6-4.2-4.5-1.7c-0.7,0.9-1,1.8-1,3C-11,364.5-11.1,365.6-10.4,366.6z"/>
+				<path d="M-0.6,363.1c0.3,1.1,1.9,1.3,2.1,1.8c0.4,0.9-1.4,1.1-2.4,0.3l-0.7,1.4c0.5,0.7,2.1,0.8,3.1,0.6c1.2-0.3,1.9-1.2,2-2.4
+					c0-0.5-0.1-0.8-0.6-1.3c-0.4-0.4-0.9-0.5-1.3-0.7c-0.2-0.1-0.3-0.2-0.3-0.4c0-0.5,0.4-0.5,1-0.4l-0.1,0.7l1.4,0l0.9-2.7l-1.7,0
+					l-0.1,0.4c-0.8-0.1-1.8-0.1-2.5,0.4C0.4,360.7-0.9,361.7-0.6,363.1z"/>
+				<path id="C_1_" d="M18.9,366.7c0.2,0.2,0.4,0.3,0.8,0.4c0.4,0.1,1,0.2,1.4,0.1c0.3,0,0.5-0.1,0.8-0.2c0.3-0.1,0.5-0.2,0.7-0.3
+					c0.1-0.1,0.2-0.1,0.4-0.2l-0.3-1.4c-0.6,0.2-2.8,1.3-2.5-1.2c0.1-1.4,0.6-2.4,2.2-2.2l-0.1,0.7l1.3,0l0.9-2.7h-1.6l-0.1,0.5
+					c-1.9-0.2-2.9,0.3-3.7,1.4c-0.7,0.9-1,2.1-0.9,3.4C18.2,365.7,18.4,366.3,18.9,366.7L18.9,366.7z"/>
+				<polygon points="-4.9,366.9 -3,366.9 -2,361.8 -0.9,361.8 -0.4,360.2 -1.6,360.2 -1.2,358.2 -2.8,358.2 -3.4,360.2 -4.4,360.2 
+					-4.7,361.8 -3.9,361.8 	"/>
+				<path d="M-23.4,362c0.4-0.8,0.6-1.9,0.7-2.6c0.1-0.7-0.1-1-0.8-1.1c-0.2,0-0.4,0-0.6,0.1c-0.3,0.2-0.2,0.5-0.3,1.1
+					c-0.2,1.2-0.5,2.5,0,2.9C-23.9,363-23.6,362.4-23.4,362L-23.4,362z"/>
+				<path d="M-21.9,362.7c0.6-0.9,1.3-2.6,0.9-3.1c-0.3-0.4-1.1-0.7-1.4,0c-0.2,0.5-0.4,1.4-0.5,1.9c-0.2,0.5-0.4,1.2-0.2,1.6
+					C-22.7,363.7-22.1,363.1-21.9,362.7L-21.9,362.7z"/>
+				<polygon points="-0.5,359.3 0.8,359.3 1.8,356.5 0.1,356.5 	"/>
+			</g>
+		</symbol>
+		
+	</svg>
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="/">
+					<img src="/img/logo.jpg" alt="E-Commerce weekend">
+				</a>
+			</div>
+			<div class="header__info">
+				<h1>Клуб крупнейших <strong>E-commerce проектов</strong></h1>
+				<div class="header__block">
+					<div class="soc">
+						<span>Мы в соцсетях</span>
+						<a href="#">
+							<img src="img/svg/facebook.svg" alt="">
+						</a>
+						<a href="#">
+							<img src="img/svg/instagram.svg" alt="">
+						</a>
+					</div>
+					<nav class="nav">
+						<a href="#" class="nav__link link">Личный кабинет</a>
+						<a href="#" class="nav__link link">Список участников</a>
+					</nav>
+				</div>
+				<div class="header__block">
+					<a href="#welcome" class="link link_tag">#e-commerce weekend</a>
+					<a href="#program" class="link link_tag">#программа</a>
+					<a href="#register" class="link link_tag">#регистрация</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<div class="coming">
+			<p>
+				<strong>17-19</strong>
+				августа
+				<strong>2018</strong>
+				<span>Армения</span>
+			</p>
+		</div>
+		<section class="section section_bg welcome">
+			<div class="slider">
+				<ul class="slider__slides">
+					<li class="slide">
+						<div class="slide__content">
+							<p>Для тех, кто сам своими руками строит рынок E-COMMERCE</p>
+						</div>
+						<img class="slide__bg" src="img/slider/slide-1.jpg" alt="">
+					</li>
+					<li class="slide">
+						<div class="slide__content">
+							<p>Крутой слайдер</p>
+						</div>
+						<img class="slide__bg" src="img/slider/slide-2.jpg" alt="">
+					</li>
+					<li class="slide">
+						<div class="slide__content">
+							<p>Зацикленный</p>
+						</div>
+						<img class="slide__bg" src="img/slider/slide-1.jpg" alt="">
+					</li>
+					<li class="slide">
+						<div class="slide__content">
+							<p>С анимацией</p>
+						</div>
+						<img class="slide__bg" src="img/slider/slide-2.jpg" alt="">
+					</li>
+				</ul>
+				<div class="slider__controls">
+					<div class="container">
+						<button class="slider__arrow slider__arrow_prev">
+							<svg>
+								<use xlink:href="#arrow"/>
+							</svg>
+						</button>
+						<button class="slider__arrow slider__arrow_next">
+							<svg>
+								<use xlink:href="#arrow"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="container" id="welcome">
+				<div class="welcome__text">
+					<h2 class="title">E-commerce weekend — это...</h2>
+					<p>...встреча для тех, кто сам своими руками строит e-com. Эта встреча для того, чтобы получить идеи новых инструментов, чтобы увидеть новые ходы для повышения эффективности, чтобы перенять новый опыт. И конечно, эта встреча для новых проектов и новых партнеров. И да, мы приглашаем на встречу самые интересные сервисы для e-commerce и самые интересные решения.
+	...возможность переключиться и получить заряд оптимизма, научиться чему-то и главное — по-новому посмотреть на то, что делаешь. Именно для этого мы делаем встречу в горах — это переключение и приключение.</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="section people">
+			<div class="container">
+				<ul class="people__list">
+					<li class="people__item">
+						<div class="people__item-img">
+							<img src="img/people/irina.jpg" alt="Ирина Поддубная">
+						</div>
+						<div class="people__item-content">
+							<span class="people__item-name">Ирина Поддубная</span>
+							<ol class="list">
+								<li>Организатор, драйвер e-commerce community в Сибири</li>
+							</ol>
+							<div class="people__item-say">
+								<p>E-commerce Weekend — это выездная встреча экспертов интернет-торговли, встреча руководителей e-commerce крупнейших магазинов и интернет-магазинов страны.
+								Важно: это закрытая встреча (вход только для своих, факт регистрации не гарантирует участие, необходимо дождаться письма-подтверждения от организаторов). Такой формат необходим, чтобы сохранить баланс среди участников и cделать событие комфортным и эффективным для всех.<br>
+								Программа — нетворкинг, нетворкинг и еще раз нетворкинг + новые инструменты и технологии, новые подходы и методики, которые уже сейчас можно применять.</p>
+							</div>
+						</div>
+					</li>
+					<li class="people__item">
+						<div class="people__item-img">
+							<img src="img/people/mujik.jpg" alt="Ирина Поддубная">
+						</div>
+						<div class="people__item-content">
+							<span class="people__item-name">Ирина Поддубная</span>
+							<ol class="list">
+								<li>Организатор, драйвер e-commerce community в Сибири</li>
+							</ol>
+							<div class="people__item-say">
+								<p>E-commerce Weekend — это выездная встреча экспертов интернет-торговли, встреча руководителей e-commerce крупнейших магазинов и интернет-магазинов страны.
+								Важно: это закрытая встреча (вход только для своих, факт регистрации не гарантирует участие, необходимо дождаться письма-подтверждения от организаторов). Такой формат необходим, чтобы сохранить баланс среди участников и cделать событие комфортным и эффективным для всех.<br>
+								Программа — нетворкинг, нетворкинг и еще раз нетворкинг + новые инструменты и технологии, новые подходы и методики, которые уже сейчас можно применять.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<h2 class="title"><span>Участники E-Commerce Weekend</span></h2>
+				<ul class="partners">
+					<li><img src="img/partners/22.png" alt="Ситилинк"></li>
+					<li><img src="img/partners/23.png" alt="Ашан"></li>
+					<li><img src="img/partners/24.png" alt="icontext"></li>
+					<li><img src="img/partners/25.png" alt="Criteo"></li>
+					<li><img src="img/partners/26.png" alt="DPD"></li>
+					<li><img src="img/partners/27.png" alt="Flocktory"></li>
+					<li><img src="img/partners/28.png" alt="Siberian Health"></li>
+					<li><img src="img/partners/29.png" alt="SPSR"></li>
+					<li><img src="img/partners/30.png" alt="Unilever"></li>
+					<li><img src="img/partners/29.png" alt="SPSR"></li>
+					<li><img src="img/partners/28.png" alt="Siberian Health"></li>
+					<li><img src="img/partners/23.png" alt="Ашан"></li>
+					<li><img src="img/partners/26.png" alt="DPD"></li>
+					<li><img src="img/partners/25.png" alt="Criteo"></li>
+					<li><img src="img/partners/24.png" alt="icontext"></li>
+					<li><img src="img/partners/23.png" alt="Ашан"></li>
+					<li><img src="img/partners/22.png" alt="Ситилинк"></li>
+					<li><img src="img/partners/26.png" alt="DPD"></li>
+					<li><img src="img/partners/27.png" alt="Flocktory"></li>
+					<li><img src="img/partners/28.png" alt="Siberian Health"></li>
+					<li><img src="img/partners/29.png" alt="SPSR"></li>
+					<li><img src="img/partners/30.png" alt="Unilever"></li>
+					<li><img src="img/partners/24.png" alt="icontext"></li>
+					<li><img src="img/partners/25.png" alt="Criteo"></li>
+					<li><img src="img/partners/22.png" alt="Ситилинк"></li>
+					<li><img src="img/partners/23.png" alt="Ашан"></li>
+					<li><img src="img/partners/24.png" alt="icontext"></li>
+					<li><img src="img/partners/25.png" alt="Criteo"></li>
+					<li><img src="img/partners/26.png" alt="DPD"></li>
+					<li><img src="img/partners/27.png" alt="Flocktory"></li>
+					<li><img src="img/partners/28.png" alt="Siberian Health"></li>
+					<li><img src="img/partners/29.png" alt="SPSR"></li>
+					<li><img src="img/partners/30.png" alt="Unilever"></li>
+					<li><img src="img/partners/29.png" alt="SPSR"></li>
+					<li><img src="img/partners/28.png" alt="Siberian Health"></li>
+					<li><img src="img/partners/23.png" alt="Ашан"></li>
+					<li><img src="img/partners/26.png" alt="DPD"></li>
+					<li><img src="img/partners/25.png" alt="Criteo"></li>
+					<li><img src="img/partners/24.png" alt="icontext"></li>
+					<li><img src="img/partners/23.png" alt="Ашан"></li>
+					<li><img src="img/partners/22.png" alt="Ситилинк"></li>
+					<li><img src="img/partners/26.png" alt="DPD"></li>
+					<li><img src="img/partners/27.png" alt="Flocktory"></li>
+					<li><img src="img/partners/28.png" alt="Siberian Health"></li>
+					<li><img src="img/partners/29.png" alt="SPSR"></li>
+					<li><img src="img/partners/30.png" alt="Unilever"></li>
+					<li><img src="img/partners/24.png" alt="icontext"></li>
+					<li><img src="img/partners/25.png" alt="Criteo"></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<h2 class="title"><span>Место проведения</span></h2>
+				<div class="content">
+					<p>Армения: страна огромной истории, страна, со вторым по древности из ныне существующих в мире письменных языков (5 век нашей эры). Страна удивительных камней и еще более удивит</p>
+					<p>Мы живем в пятизвездочном отеле в горах, ходим по окрестностям, ездим на экскурсии. В программе множество разных интересных мероприятий, которые позволят нам немного узнать Армению за несколько дней, которые мы проведем в этой стране.</p>
+					<p>Деловая программа раскроет новые идеи для онлайн-ритейла, а специальная программа для общения позволит наладить нужные деловые контакты</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<h2 class="title"><span>Как это было</span></h2>
+				<div class="gallery">
+					<ul class="gallery__tabs">
+						<li class="tab"><a href="#" class="link">Сочи 2018</a></li>
+						<li class="tab"><a href="#" class="link">Байкал 2017</a></li>
+						<li class="tab"><a href="#" class="link">Гудари 2017</a></li>
+						<li class="tab"><a href="#" class="link">Шерегеш 2016</a></li>
+						<li class="tab"><a href="#" class="link">Горный алтай 2016</a></li>
+					</ul>
+					<div class="gallery__photos" data-tab="0">
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-1.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-2.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-3.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-4.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-4.jpg" alt="">
+							</div>
+						</div>	
+
+					</div>
+					<div class="gallery__photos" data-tab="1">
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-4.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-3.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-2.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-1.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-1.jpg" alt="">
+							</div>
+						</div>	
+
+					</div>
+					<div class="gallery__photos" data-tab="2">
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-1.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-2.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-3.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-4.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-4.jpg" alt="">
+							</div>
+						</div>	
+
+					</div>
+					<div class="gallery__photos" data-tab="3">
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-4.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-3.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-2.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-1.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-1.jpg" alt="">
+							</div>
+						</div>	
+
+					</div>
+					<div class="gallery__photos" data-tab="4">
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-1.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-2.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-3.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-4.jpg" alt="">
+							</div>
+						</div>	
+						<div class="photo">
+							<div class="photo__wrap">
+								<img src="img/gallery/photo-4.jpg" alt="">
+							</div>
+						</div>	
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section section_bg section_programma" id="program">
+			<div class="container">
+				<h2 class="title"><span>Программа Сочи 2018</span></h2>
+				<div class="day">
+					<div class="day__date">
+						<div class="day__date-wrap">
+							<strong class="day__date-day">ЧТ<span></span>20</strong>
+							<span class="day__date-month">августа</span>
+						</div>
+					</div>
+					<div class="day__content">
+						<div class="day__text">
+							<p>Авиаперелёт<br>Москва – Новосибирск, Москва – Барнаул, Москва Горно-Алтайск Трансфер до базы отдыха</p>
+						</div>
+					</div>
+				</div>
+				<div class="day">
+					<div class="day__date">
+						<div class="day__date-wrap">
+							<strong class="day__date-day">ПТ<span></span>21</strong>
+							<span class="day__date-month">августа</span>
+						</div>
+					</div>
+					<div class="day__content">
+						<div class="day__event">
+							<div class="day__time day__time_food">
+								<span>9.00</span>
+							</div>
+							<div class="day__text">
+								<p>Завтрак</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time">
+								<span>10.00-11.00</span>
+							</div>
+							<div class="day__text">
+								<p>Приветственное слово e-Commerce Community Siberia. Знакомство участников.</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time">
+								<span>11.00</span>
+							</div>
+							<div class="day__text">
+								<p>«Есть ли жизнь в Сибири? Или как покорить регионы».</p>
+								<p><strong>Спикер:</strong> Ирина Поддубная, руководитель отдела маркетинга и интернет-продаж ГК Обувь России. </p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time">
+								<span>11.30-12.00</span>
+							</div>
+							<div class="day__text">
+								<p>Тема выступления уточняется</p>
+								<p><strong>Спикер:</strong> Сергей Егоров, коммерческий директор СДЭК</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time">
+								<span>12.00-14.00</span>
+							</div>
+							<div class="day__text">
+								<p>Командная бизнес-игра</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time day__time_food">
+								<span>14.00</span>
+							</div>
+							<div class="day__text">
+								<p>Обед</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time">
+								<span>15.00</span>
+							</div>
+							<div class="day__text">
+								<p>Экскурсия на Озеро Манжерок (3,5 часа)</p>
+								<p>Небольшое, но самое теплое и мелкое озеро Горного Алтая, на котором растет 
+								водяная лилия. Мы прокатимся на подъемнике, встретим местных жителей 
+								в национальных костюмах и полюбуемся пейзажем.</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time day__time_food">
+								<span>19.00</span>
+							</div>
+							<div class="day__text">
+								<p>Ужин</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time">
+								<span>20.00</span>
+							</div>
+							<div class="day__text">
+								<p>Вечерняя программа «e-Commerce в шляпе»</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time">
+								<span>22.30</span>
+							</div>
+							<div class="day__text">
+								<p>Баня для желающих</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="day">
+					<div class="day__date">
+						<div class="day__date-wrap">
+							<strong class="day__date-day">СБ<span></span>22</strong>
+							<span class="day__date-month">августа</span>
+						</div>
+					</div>
+					<div class="day__content">
+						<div class="day__event">
+							<div class="day__time day__time_food">
+								<span>9.00</span>
+							</div>
+							<div class="day__text">
+								<p>Завтрак</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time">
+								<span>10.00-14.00</span>
+							</div>
+							<div class="day__text">
+								<p>
+									Бизнес программа<br>
+									Круглые столы по темам. Практический разбор острых вопросов, кейсов.  <br>
+									<strong>Работа в небольших группах:</strong><br>
+									— логистика<br>
+									— продажи<br>
+									— возвраты<br>
+									— реклама в интернете<br>
+									— мотивация<br>
+									— call-центр<br>
+									— юзабилити<br>
+									— мультиканальность в российских реалиях<br>
+									— юнитэкономика 
+								</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time day__time_food">
+								<span>14.00</span>
+							</div>
+							<div class="day__text">
+								<p>Обед</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time">
+								<span>15.30</span>
+							</div>
+							<div class="day__text">
+								<p>
+									Активная часть<br>
+									Командный сплав по реке Катунь на рафтах (минимальная группа 6 человек) 
+									Мы пройдем по Манжерокской шивере (400м.) порог Манжерок (2 ч, 1,2 на воде) 
+									или Для тех, кто не любит воду предусмотрели Джип тур «Чертов Палец». (1,5 ч) 
+									Увлекательная прогулка к энергетическим разломам «Чертов Палец» 
+									и «Голова Шамана». 
+								</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time day__time_food">
+								<span>18.30</span>
+							</div>
+							<div class="day__text">
+								<p>Ужин</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time">
+								<span>19.00-22.00</span>
+							</div>
+							<div class="day__text">
+								<p>Бизнес-игра</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time">
+								<span>22.30</span>
+							</div>
+							<div class="day__text">
+								<p>Баня для желающих</p>
+							</div>
+						</div>
+						<div class="day__text">
+							<p>Неформальное общение</p>	
+						</div>
+					</div>
+				</div>
+				<div class="day">
+					<div class="day__date">
+						<div class="day__date-wrap">
+							<strong class="day__date-day">ВС<span></span>23</strong>
+							<span class="day__date-month">августа</span>
+						</div>
+					</div>
+					<div class="day__content">
+						<div class="day__event">
+							<div class="day__time day__time_food">
+								<span>9.00</span>
+							</div>
+							<div class="day__text">
+								<p>Завтрак</p>
+							</div>
+						</div>
+						<div class="day__event">
+							<div class="day__time">
+								<span>11.00</span>
+							</div>
+							<div class="day__text">
+								<p>Подведение итогов<br>Свободное время и отъезд</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section_nomar">
+			<div class="container">
+				<div class="invite">
+					<p class="invite__text">
+						Хотите стать партнером мероприятия? <br>
+						Появились идеи или предложения?<br>
+						Пишите <a href="mailto:live@ecomweekend.ru">live@ecomweekend.ru</a>
+					</p>
+					<div class="invite__partners">
+						<p>Организаторы</p>
+						<div class="org"><img src="img/partners/org-1.png" alt=""></div>
+						<div class="org"><img src="img/partners/org-2.png" alt=""></div>
+						<div class="org"><img src="img/partners/org-3.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="container">
+				<h2 class="title"><span>Стоимость участия</span></h2>
+				<div class="pricing">
+					<div class="pricing__main">
+						<p>
+							<strong>Стоимость</strong>
+							<span>— интернет-магазины: 76 000 руб.</span>
+							<span>— сервисные компании: 115 000 руб.</span>
+						</p>
+						<p>
+							<strong>Специальная стоимость при оплате до 20 апреля</strong>
+							<span>— интернет-магазины: 60 000 руб.</span>
+							<span>— сервисные компании: 90 000 руб.</span>
+						</p>
+						<p>
+							<strong>Специальная стоимость при оплате с 21 апреля до 20 мая</strong>
+							<span>— интернет-магазины: 67 000 руб.</span>
+							<span>— сервисные компании: 101 000 руб.</span>
+						</p>
+						<p>
+							<strong>Специальная персональная скидка для участников клуба</strong>
+							<span>— 10 000 руб.</span>
+							<span class="pricing__tip">Скидка действует для любой цены, в том числе и для специальной</span>
+						</p>
+						<p>
+							<strong>Специальная скидка при двухместном размещении<br>(возможно размещение 2 человек в одном номере)</strong>
+							<span>— 5 000 рублей для каждого участника</span>
+							<span class="pricing__tip">Скидка действует для любой цены, в том числе и для специальной</span>
+						</p>
+						<p>
+							<strong>Для вторых половинок (Без участия в бизнес-части)</strong>
+							<span>— 23 000 руб.</span>
+							<span class="pricing__tip">Участие "половинок" включает все кроме деловой программы и подразумевает двухместное размещение с основным участником. </span>
+							<span class="pricing__tip">
+								Пожалуйста, обратите внимание, что стоимость для "половинок" распространяется только на людей не являющихся участниками рынка.
+							</span>
+						</p>
+					</div>
+					<div class="pricing__help">
+						<p>
+							<strong>В стоимость включено*:</strong>
+							— деловая программа<br>
+							— проживание<br>
+							— трехразовое питание в дни мероприятия<br>
+							— праздничный ужин в субботу<br>
+							— экскурсионно-развлекательная программа<br>
+							— трансферы из/в аэропорт<br>
+							— раздаточные материалы<br>
+							— нетворкиновые мероприятия
+						</p>
+						<p>
+							<strong>В стоимость не включено*:</strong>
+							— билеты на самолет<br>
+							— страховка для выезжающих за границу<br>
+							— алкоголь<br>
+							— развлекательные мероприятия вне программы
+						</p>
+						<p>
+							* Участникам предыдущих Ecommerce Weekend специальные цены (именные скидки)<br>
+							** Мы предусмотрели специальную цену для ваших вторых половинок (без участия в бизнес-части)
+						</p>
+						<p>
+							<span class="pricing__tip">Страховка и авиабилет оплачиваются отдельно.<br>
+Стоимость партнерского пакета вы можете уточнить у организаторов.</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section section_bg section_app" id="register">
+			<div class="container">
+				<h2 class="title"><span>Заявка на участие</span></h2>
+				<div class="app">
+					<span class="app__caption">На следующий E-COM WEEKEND</span>
+					<form class="form">
+						<div class="form__block">
+							<label class="field field_req">
+								<span class="field__cap">Ф.И.О</span>
+								<span class="field__text">
+									<input type="text">
+								</span>
+							</label>
+							<label class="field field_req">
+								<span class="field__cap">Должность</span>
+								<span class="field__text">
+									<input type="text">
+								</span>
+							</label>
+							<label class="field field_req">
+								<span class="field__cap">Компания</span>
+								<span class="field__text">
+									<input type="text">
+								</span>
+							</label>
+							<label class="field field_req">
+								<span class="field__cap">Ссылка на сайт</span>
+								<span class="field__text">
+									<input type="text">
+								</span>
+							</label>
+						</div>
+						<div class="form__block">
+							<label class="field field_req">
+								<span class="field__cap">E-mail</span>
+								<span class="field__text">
+									<input type="text">
+								</span>
+							</label>
+							<label class="field field_req">
+								<span class="field__cap">Телефон</span>
+								<span class="field__text">
+									<input type="text">
+								</span>
+							</label>
+							<label class="field">
+								<span class="field__cap">Как о нас узнали / по чьей рекомендации</span>
+								<span class="field__text">
+									<input type="text">
+								</span>
+							</label>
+							<label class="field">
+								<span class="field__cap">Хочу предложить свой доклад (Введите тему)</span>
+								<span class="field__text">
+									<input type="text">
+								</span>
+							</label>
+						</div>
+						<button class="btn">Подать заявку</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<footer class="footer footer_index">
+		<div class="container">
+			<div class="footer__block">
+				<span class="footer__cap">Контакты</span>
+				<a href="mailto:live@ecomweekend.ru" class="footer__link">live@ecomweekend.ru</a>
+				<a href="tel:+79686344150" class="footer__link">+7 968 634-41-50</a>
+			</div>
+			<div class="footer__block">
+				<span class="footer__cap">Мы в соцсетях</span>
+				<div class="soc">
+					<a href="#">
+						<img src="img/svg/facebook.svg" alt="">
+					</a>
+					<a href="#">
+						<img src="img/svg/instagram.svg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="dev">
+				<p>Разработка сайта - 
+					<a href="#" target="_blank">
+						<svg>
+							<use xlink:href="#letsrock"/>
+						</svg>
+					</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/libs.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
